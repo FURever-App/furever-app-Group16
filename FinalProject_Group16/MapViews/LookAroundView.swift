@@ -51,7 +51,7 @@ struct LookAroundView: View {
             do {
                 let scene = try await request.scene
                 DispatchQueue.main.async {
-                    lookaroundScene = scene 
+                    lookaroundScene = scene
                 }
             } catch {
                 print("Failed to load LookAround scene: \(error)")

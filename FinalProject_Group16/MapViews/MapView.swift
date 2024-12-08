@@ -117,7 +117,7 @@ class Coordinator: NSObject, MKMapViewDelegate {
 //        onAnnotationSelected(annotation.landmark) // Pass selected landmark back
 //    }
     
-    private var selectedLandmark: Landmark? 
+    private var selectedLandmark: Landmark?
     // Handle annotation selection
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         guard let annotation = view.annotation as? LandmarkAnnotation else { return }
